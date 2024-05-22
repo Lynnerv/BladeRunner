@@ -1,8 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Blade Runner Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center blade-runner-theme">
+    <h1 class="display-4">Bienvenido a Blade Runner</h1>
+    <p>Explora el mundo de Blade Runner y aprende más sobre el futuro distópico donde los replicantes y los humanos conviven.</p>
+    <p><a href="https://www.imdb.com/title/tt1856101/" class="btn custom-btn">INICIAR</a></p>
 </div>
+
+<style>
+    body {
+        background: url('/images/blade-runner-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #f0f0f0;
+    }
+    .blade-runner-theme {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .blade-runner-theme h1 {
+        font-family: 'OCR A Std', monospace;
+        color: #ffa500;
+    }
+    .blade-runner-theme p {
+        font-family: 'Roboto', sans-serif;
+        color: #f0f0f0;
+    }
+    .blade-runner-theme a:hover {
+        color: #ff4500;
+    }
+    .custom-btn {
+        background-color: #ff4500; /* Color de fondo del botón */
+        color: #ffffff; /* Color del texto del botón */
+        border: none; /* Elimina el borde */
+        padding: 10px 20px; /* Espaciado interno del botón */
+        font-size: 16px; /* Tamaño de la fuente */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    }
+    .custom-btn:hover {
+        background-color: #ffa500; /* Color de fondo del botón al pasar el ratón */
+    }
+</style>
